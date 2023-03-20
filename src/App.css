@@ -146,3 +146,32 @@
    }
   
   
+   #header-contact {
+
+    margin-top: 100px
+   }
+
+
+
+   
+   .flex-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+
+   }
+
+   .flex-item{
+
+    padding: 20px;
+   
+
+
+   }
+
+
+
+  
