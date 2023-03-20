@@ -40,3 +40,109 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+  /* color de la barra de navegacion color */
+  
+  .nav_main {
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0.1rem 0.1rem white;
+    border-bottom-right-radius: 40px;
+    /*porque??*/top: 0;
+    left: 0;
+
+}
+
+
+
+
+  
+  .nav {
+  
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    
+    
+  
+  }
+  
+  /*color de la letras de la barra de navegacion */
+  
+  .nav-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+  
+  .logo {
+    padding: 0 40px;
+    line-height: 70px;
+  }
+  
+  .nav-menu {
+  
+  
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: max-content;
+
+}
+  
+  .nav-menu-link{
+    padding: 8px 10px;
+    border-radius: 3px;
+  
+  }
+  
+  .nav-menu-link:hover, .nav-menu-link_active{
+  /*colordelhover*/background-color: rgb(255, 255, 255);
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+  
+  .nav-toggle {
+  
+    color: black;
+    background: none;
+    border: none;
+    padding: 0 20PX;
+    line-height: 50PX;
+    display: none;
+    cursor: pointer;
+    
+  
+  }
+   .nav-marca-link {
+    
+    text-decoration: none;
+    line-height: 70px;
+    text-transform: uppercase;
+   
+  
+  
+   }
+  
+   .nav-marca {
+  
+    list-style: none;
+   }
+  
+  

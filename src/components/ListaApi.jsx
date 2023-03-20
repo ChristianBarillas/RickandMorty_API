@@ -1,7 +1,9 @@
 import React from 'react'
 import{ useState, useEffect } from 'react'
-import Tarjeta from './Tarjeta'
-export default function ListaRickandMorty() {
+import Tarjeta from './Tarjeta';
+
+
+const ListaApi =()=> {
 
 const [rickandmorty, setRickandmorty] = useState([]);
 
@@ -33,4 +35,6 @@ console.log(rickandmorty)
     </div>
   )
 }
-``
+
+
+export default ListaApi

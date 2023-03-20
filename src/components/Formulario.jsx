@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Formulario() {
+const Formulario =()=> {
     const [name, setName] = useState({});
     const [nombre, setNombre] = useState("");
 
@@ -30,3 +30,6 @@ export default function Formulario() {
     </div>
   )
 }
+
+
+export default Formulario

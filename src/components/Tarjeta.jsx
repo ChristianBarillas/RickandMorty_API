@@ -15,7 +15,7 @@ export default function Tarjeta(props) {
         setOrigen(datos.origin);
         setUbicacion(datos.location);
     }
-    useEffect(() => {
+    useEffect(() => {``
         obtenerPersonajeByUrl(props.url);
     }, []);
     console.log(personaje);
