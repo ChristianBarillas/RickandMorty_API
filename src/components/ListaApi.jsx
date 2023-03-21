@@ -15,7 +15,7 @@ const obtenerPersonajes = async () => {
 }
 useEffect(() => {
     obtenerPersonajes();
-});
+},[]);
 console.log(rickandmorty)
   return (
     <div className= 'container'>
