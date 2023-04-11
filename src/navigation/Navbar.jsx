@@ -12,9 +12,11 @@ const Navbar = ()=>{
 
 <ul className="nav-menu nav-menu_visible">
 
-    <li className="nav-menu-item"><Link className="nav-menu-link nav-link" to='/home'>Home</Link></li>
-    <li className="nav-menu-item"><Link className="nav-menu-link nav-link" to='/login'>Login</Link></li>
-    <li className="nav-menu-item"><Link className="nav-menu-link nav-link" to='/about'>About</Link></li>
+  
+<li className="nav-menu-item"> <Link className="nav-menu-link nav-link" to="/register">Buscador de pokemon </Link> </li> 
+    <li className="nav-menu-item"><Link className="nav-menu-link nav-link" to='/about'>Conoce mas sobre los creadores</Link></li>
+    
+   
 
 </ul>
 

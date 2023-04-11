@@ -12,60 +12,48 @@ const About = () =>{
 
         <div>
 
-        
-                    <div className ="container-about">
-         
-         <div align = "center">
-        
-            <header id="header-contact"> 
-        
-                <h4> <strong>PokeSearch</strong> was created for </h4> 
-        
-        <div className='flex-container'>
-            <div className='flex-item'>
-            <img src= {christian} alt="JavascriptIcon" height="50px" width= "75px" />
-            <caption> Christian</caption>
+<section id="title">
+        <h1>
+            Academia Kodigo <br/>
+            Grupo #3
+        </h1>
+
+
+
+    </section>
+
+    <div class="info-container">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="/src/media/images/Christian.png"/>
+                <h2 id="nombre"> Christian Barillas </h2>
+                <p>Estudiante del Bootcamp Full Stack Junior 12 </p>
             </div>
-            
-            <div className='flex-item'>  
-        <img src = {jared} alt ="pythonIcon" height="50px" width ="55px"/>
-        <caption>Jared</caption>
-        
-         </div>
-      
-      
-
-        </div>
-         
-            
-                    
-            </header>
-        
-        
-            <div >
-        
-        <h5>Extra</h5>
-        
-        <p>Agradecimientos.</p>
-
-        
-        
-        </div>
-        
-        
-    
-        
-
-       
-        
+            <div class="col-lg-4">
+                <img src="/src/media/images/Jared.png"/>
+                <h2 id="nombre"> Jared Ramos </h2>
+                <p>Estudiante del Bootcamp Full Stack Junior 12 </p>
             </div>
-        
-        
-   
-        
-        
+            <div class="col-lg-4">
+                <img src="/src/media/images/Julissa.png"/>
+                <h2 id="nombre"> Julissa Escalante </h2>
+                <p>Estudiante del Bootcamp Full Stack Junior 12</p>
+
+
+
+            </div>
+
+
         </div>
-        
+    </div>
+
+    <footer id="about-footer">
+        <p>© Copyright Grupo#3</p>
+        <i class="fab fa-facebook icon"></i>
+        <i class="fab fa-twitter icon"></i>
+        <i class="fab fa-linkedin icon"></i>
+    </footer>
+
                 </div>
     )
 }

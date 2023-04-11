@@ -16,15 +16,15 @@ const obtenerPersonajes = async () => {
 useEffect(() => {
     obtenerPersonajes();
 },[]);
-console.log(rickandmorty)
+
   return (
     <div className= 'container'>
-        <h1>Lista Rick and Morty</h1> 
-        <div className= 'row' >
+      
+        <div className= 'row d-flex '  >
             {
                 rickandmorty.map((personajes, indice) => {
                     return (
-                        <div className= 'col-md-4'>
+                        <div className= 'col-md-3 d-flex lista-api '>
                            <Tarjeta key={indice} {...personajes}/>
                         </div>
                         

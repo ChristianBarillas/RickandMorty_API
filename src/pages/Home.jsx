@@ -10,8 +10,6 @@ const Home =()=>{
     
     <div>
 
-<p>Homeeeee</p>
-
 <Formulario/>
 <Lista/>
 

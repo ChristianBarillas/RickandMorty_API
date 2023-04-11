@@ -55,6 +55,8 @@
     /*porque??*/top: 0;
     left: 0;
 
+    z-index: 100;
+
 }
 
 
@@ -175,4 +177,150 @@
 
 
 
-  
+   .imglogin {
+
+    margin-top: 100px;
+  }
+
+  body{background-color: rgb(82, 172, 208);}
+
+  .style_login > button { 
+    background-color: white; 
+    border-radius:10px  ; 
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn-search{ 
+
+  margin-bottom: 20px;
+}
+
+.lista-api{
+
+  margin-bottom: 20px;
+}
+
+.btn-targeta{
+  margin: 20px;
+}
+
+
+
+
+
+
+.welcome-page {
+  background-image: url(../images/header.PNG);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 1;
+
+}
+
+
+/* Eliminar despues */
+.navbar {
+  color: white;
+  background-color: black;
+}
+
+.welcome-container {
+  padding: 3% 8%;
+}
+
+h1 {
+  color: white;
+  font-size: 4.0rem;
+  line-height: 3;
+  font-weight: 800;
+}
+
+.welcomeh2 {
+  color: white;
+  padding-bottom: 20%;
+}
+
+button {
+  margin: 5% 3% 5% 0;
+}
+
+
+
+#footer {
+  margin: auto;
+  color: white;
+  text-align: center;
+  line-height: 2;
+
+}
+
+.icon {
+  padding: .25px;
+
+}
+
+.about-page {
+  background-color: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 1;
+}
+
+.aboutus-header {
+  background-color: gray;
+  padding: 3% 8%;
+
+}
+
+/*About Us Page*/
+
+#title {
+  background-image: url(../images/kodigo.PNG);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 1;
+  padding: 1% 5%;
+}
+
+.info-container {
+
+  padding: 7% 15%;
+  opacity: 1;
+  background-color: #2d095c;
+}
+
+.col-lg-4 {
+  text-align: center;
+  color: white;
+
+
+}
+
+img {
+  border-radius: 50%;
+  width: 60%;
+  height: 70%;
+
+}
+
+
+.nombre {
+  color: black;
+  font-weight: bold;
+  padding-top: 2px;
+  ;
+
+}
+
+#about-footer {
+  margin: auto;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  background-color: #240041;
+}

@@ -18,7 +18,7 @@ export default function Tarjeta(props) {
     useEffect(() => {``
         obtenerPersonajeByUrl(props.url);
     }, []);
-    console.log(personaje);
+    
     const idModal = `#${personaje.id}`;
   return (
     <div>
@@ -26,7 +26,7 @@ export default function Tarjeta(props) {
             <div className="card-body">
                <h5 className="card-title">{personaje.name}</h5>
              <img src={image} alt="" />
-             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target={idModal}>
+             <button type="button" className="btn btn-primary btn-targeta" data-bs-toggle="modal" data-bs-target={idModal}>
                 Ver informacion de personaje
               </button>
               </div>
