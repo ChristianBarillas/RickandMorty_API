@@ -5,6 +5,7 @@ import About from "../pages/About";
 
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Bienvenida from "../pages/Bienvenida";
 
 
 
@@ -23,6 +24,7 @@ const Dashboard = () => {
 
   <Route path="/login" element={<Login/>}/>
   <Route path="/about" element={<About/>}/>
+  <Route path="/bienvenida" element={<Bienvenida/>}/>
   <Route path = '/register' element = {<Register/>}/>
 
 
