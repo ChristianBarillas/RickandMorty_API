@@ -4,7 +4,7 @@ import Navbar from "../navigation/Navbar";
 import About from "../pages/About";
 
 import Login from "../pages/Login";
-import Register from "../pages/Register";
+import Register from "../components/Register";
 import Bienvenida from "../pages/Bienvenida";
 
 

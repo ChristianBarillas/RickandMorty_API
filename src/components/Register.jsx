@@ -1,10 +1,10 @@
 
 import { useAuth0 } from '@auth0/auth0-react';
 import React from 'react';
-import Perfil from '../components/Perfil';
-import SignIn from '../components/SignIn';
-import SingUp from '../components/SignUp';
-import Home from './Home';
+import Perfil from './Perfil';
+import SignIn from './SignIn';
+import SingUp from './SignUp';
+import Home from '../pages/Home';
 
 
 const Register = () => {

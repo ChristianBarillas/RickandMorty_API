@@ -13,7 +13,7 @@ const Perfil = ()=> {
     return (isAuthenticated &&(
 
          
-        <div className="imglogin">
+        <div className="profilelogi">
 <img src= {user.picture} alt ={user.name}/>
 <h2>{user.name}</h2>
 <p>Email: {user.email}</p>

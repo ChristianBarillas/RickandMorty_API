@@ -1,6 +1,5 @@
 import React from 'react'
-import christian from '../media/img2.webp'
-import jared from '../media/img5.jpg'
+
 
 
 
@@ -25,17 +24,17 @@ const About = () =>{
     <div class="info-container">
         <div class="row">
             <div class="col-lg-4">
-                <img src="/src/media/images/Christian.png"/>
+                <img src="/src/assets/media/images/Christian.png"/>
                 <h2 id="nombre"> Christian Barillas </h2>
                 <p>Estudiante del Bootcamp Full Stack Junior 12 </p>
             </div>
             <div class="col-lg-4">
-                <img src="/src/media/images/Jared.png"/>
+                <img src="/src/assets/media/images/Jared.png"/>
                 <h2 id="nombre"> Jared Ramos </h2>
                 <p>Estudiante del Bootcamp Full Stack Junior 12 </p>
             </div>
             <div class="col-lg-4">
-                <img src="/src/media/images/Julissa.png"/>
+                <img src="/src/assets/media/images/Julissa.png"/>
                 <h2 id="nombre"> Julissa Escalante </h2>
                 <p>Estudiante del Bootcamp Full Stack Junior 12</p>
 
@@ -49,9 +48,8 @@ const About = () =>{
 
     <footer id="about-footer">
         <p>© Copyright Grupo#3</p>
-        <i class="fab fa-facebook icon"></i>
-        <i class="fab fa-twitter icon"></i>
-        <i class="fab fa-linkedin icon"></i>
+
+       
     </footer>
 
                 </div>

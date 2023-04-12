@@ -10,7 +10,6 @@ const [rickandmorty, setRickandmorty] = useState([]);
 const obtenerPersonajes = async () => {
     let respuesta= await fetch('https://rickandmortyapi.com/api/character?mame=');
     let datos = await respuesta.json();
-    /**console.log(datos.results);*/
     setRickandmorty(datos.results);
 }
 useEffect(() => {
@@ -39,22 +38,3 @@ useEffect(() => {
 
 export default ListaApi
 
-// objeto_estudiantes.filter(estudiante => {
-//     //return estudiante.bootcamp == buscar
-//     return estudiante.bootcamp.includes(buscar)
-// }).map(estudiante => {
-//     //empezando a dibujar el cuerpo de la tabla
-
-//     //creando un elemento html
-//     let fila = document.createElement('tr');
-
-//     fila.innerHTML = `
-//         <td>${estudiante.nombre}</td>
-//         <td>${estudiante.edad}</td>
-//         <td>${estudiante.bootcamp}</td>
-//         <td>${estudiante.nota}</td>
-//     `;
-
-//     //agregando la fila al elemento tbody
-//     tabla.appendChild(fila);
-// })

@@ -1,24 +1,24 @@
 import React from 'react'
+import Videos from '../components/VideoAI'
+
 
 export default function Bienvenida() {
   return (
-    <div>
+    <div  class="welcome-page">
         <section class="welcome-container">
 
-<div class="row">
-    <div class="col-md-6 col-sm-6">
-        <h1>Bienvenido/a!</h1>
+        <h1 class="animationSV"> Bienvenidos! </h1> 
+
         <h2 class="welcomeh2">¡Nos da gusto que estés aquí! En nuestra página encontrarás información de tus
             personajes favoritos
             de
             Rick
             y Morty.</h2>
-        <button class="btn btn-success btn-lg "><i class="fas fa-user-alt"></i> Iniciar Sesion </button>
-       
-    </div>
-</div>
 
 </section>
+
+{/* <Videos/> */}
+
 <footer id="footer">
 <p>© Copyright Grupo#3</p>
 <i class="fab fa-facebook icon"></i>

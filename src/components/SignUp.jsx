@@ -12,9 +12,9 @@ const SingUp = () => {
     <div className="style_login">
 
     
-    <button onClick={()=>{ logout({returnTo: window.location.origin})}}>Salir de la seccion</button>
+    <button onClick={()=>{ logout({returnTo: window.location.origin})}}class="btn btn-success btn-lg "> <i class="fas fa-user-alt"></i>Salir de la seccion</button>
 
-
+  
 
 
 

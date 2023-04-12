@@ -13,8 +13,10 @@ const SignIn = ()=> {
         
         <div className="style_login">
     
-    <button onClick={() => { loginWithRedirect() }}>Iniciar sesion </button>
+    <button onClick={() => { loginWithRedirect() }} class="btn btn-success btn-lg "> <i class="fas fa-user-alt"></i>Iniciar sesion </button>
     <p>Debes iniciar sesion para realizar busquedas de pokemones!</p>
+
+
  
 
 
