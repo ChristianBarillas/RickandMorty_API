@@ -9,7 +9,6 @@ export default function Tarjeta(props) {
     const obtenerPersonajeByUrl = async (url) => {
         let respuesta= await fetch(url);
         let datos = await respuesta.json();
-        /**console.log(datos.results);*/
         setPersonaje(datos);
         setImage(datos.image);
         setOrigen(datos.origin);
