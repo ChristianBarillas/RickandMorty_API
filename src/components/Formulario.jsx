@@ -2,59 +2,87 @@ import React, { useState } from 'react';
 
 const Formulario = () => {
   const [nombre, setNombre] = useState('');
-  const [personaje, setPersonaje] = useState(null); 
-  const [error, setError] = useState(null); // Nuevo estado para manejar los errores
+  const [ubicacion, setUbicacion] = useState('');
+  const [origen, setOrigen] = useState('');
+  const [estado, setEstado] = useState('');
+  const [personajes, setPersonajes] = useState([]);
+  const [error, setError] = useState(null);
 
   const handleName = (e) => {
-    console.log(e.target.value);
     setNombre(e.target.value);
   }
 
-  const obtenerPersonajePorNombre = async () => {
+  const handleUbicacion = (e) => {
+    setUbicacion(e.target.value);
+  }
+
+  const handleOrigen = (e) => {
+    setOrigen(e.target.value);
+  }
+
+  const handleEstado = (e) => {
+    setEstado(e.target.value);
+  }
+
+  const obtenerPersonajes = async () => {
     try {
-      const respuesta = await fetch(`https://rickandmortyapi.com/api/character/?name=${nombre}`);
+      const params = new URLSearchParams({
+        name: nombre,
+        location: ubicacion,
+        origin: origen,
+        status: estado,
+      });
+      const respuesta = await fetch(`https://rickandmortyapi.com/api/character/?${params.toString()}`);
       const datos = await respuesta.json();
 
-      if (datos.results.length === 0) { // Si no se encuentra ningún personaje con el nombre buscado, mostrar un mensaje de error
-        setError(`No se encontró ningún personaje con el nombre "${nombre}"`);
-        setPersonaje(null);
+      if (datos.results.length === 0) {
+        setError(`No se encontró ningún personaje con los filtros proporcionados`);
+        setPersonajes([]);
       } else {
-        setPersonaje(datos.results[0]); 
-        setError(null); // Si se encuentra un personaje, eliminar cualquier mensaje de error anterior
+        setPersonajes(datos.results);
+        setError(null);
       }
     } catch (error) {
       console.log(error);
-      setError(`Hubo un error al buscar el personaje "${nombre}". Por favor, inténtalo de nuevo.`);
-      setPersonaje(null);
+      setError(`Hubo un error al buscar los personajes. Por favor, inténtalo de nuevo.`);
+      setPersonajes([]);
     }
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    obtenerPersonajePorNombre();
+    obtenerPersonajes();
   }
-
-  console.log(personaje);
 
   return (
     <div className='container'>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder='Ingrese Personaje' className='form-control' onChange={handleName} /><br />
-        <button className='btn btn-dark btn-search' type='submit'>Buscar Personaje</button>
+        <input type="text" placeholder='Nombre del personaje' className='form-control' onChange={handleName} /><br />
+        <input type="text" placeholder='Ubicación' className='form-control' onChange={handleUbicacion} /><br />
+        <input type="text" placeholder='Origen' className='form-control' onChange={handleOrigen} /><br />
+        <select className='form-control' onChange={handleEstado}>
+          <option value=''>Seleciona una opcion</option>
+          <option value='alive'>Vivo</option>
+          <option value='dead'>Muerto</option>
+          <option value='unknown'>Desconocido</option>
+        </select><br />
+        <button className='btn btn-dark btn-search' type='submit'>Buscar Personajes</button>
       </form>
       {error && (
         <div className="alert alert-danger mt-3" role="alert">
           {error}
         </div>
       )}
-      {personaje && (
-        <div className='buscadorPersonajes'>
-            <div className='buscadorItem'>
-          <h2>{personaje.name}</h2>
-          <img src={personaje.image} alt={personaje.name} />
+      <div className='buscadorPersonajes'>
+        {personajes.map((personaje) => (
+          <div className='buscadorItem' key={personaje.id}>
+            <div className='buscadorItem2'>
+            <h2>{personaje.name}</h2>
+            <img src={personaje.image} alt={personaje.name} />
+            </div>
           </div>
-        </div>
-      )}
+        ))}
+      </div>
     </div>
   )
 }

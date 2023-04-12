@@ -362,19 +362,18 @@ img {
 }
 
 
-
-.buscadorItem {
+.buscadorPersonajes {
 
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-
-  margin-bottom: 20px;
-
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   
 }
+
+
+
 
 .buscadorItem h2 {
 
@@ -386,9 +385,6 @@ img {
   
 }
 
-.buscadorItem img {
-
-  margin-bottom: 20px;
-  
+.buscadorItem2 {
+  margin: 10px;
 }
-
