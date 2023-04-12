@@ -1,4 +1,7 @@
 import React from 'react'
+import christian from '../assets/media/images/Christian.png'
+import jared from '../assets/media/images/Jared.png'
+import julissa from '../assets/media/images/Julissa.png'
 
 
 
@@ -24,17 +27,17 @@ const About = () =>{
     <div class="info-container">
         <div class="row">
             <div class="col-lg-4">
-                <img src="/src/assets/media/images/Christian.png"/>
+                <img src={christian}/>
                 <h2 id="nombre"> Christian Barillas </h2>
                 <p>Estudiante del Bootcamp Full Stack Junior 12 </p>
             </div>
             <div class="col-lg-4">
-                <img src="/src/assets/media/images/Jared.png"/>
+                <img src={jared}/>
                 <h2 id="nombre"> Jared Ramos </h2>
                 <p>Estudiante del Bootcamp Full Stack Junior 12 </p>
             </div>
             <div class="col-lg-4">
-                <img src="/src/assets/media/images/Julissa.png"/>
+                <img src={julissa}/>
                 <h2 id="nombre"> Julissa Escalante </h2>
                 <p>Estudiante del Bootcamp Full Stack Junior 12</p>
 
